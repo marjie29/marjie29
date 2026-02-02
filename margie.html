@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Baby Nieza 🌸</title>
+    <style>
+        body {
+            background-color: #ffe4e1; /* Soft Pink */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #d02a52;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 500px;
+            border: 2px solid #ffb6c1;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        p { font-size: 1.1rem; line-height: 1.6; }
+
+        .heart {
+            color: #ff69b4;
+            font-size: 50px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .btn-container {
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        button:hover {
+            background-color: #ff1493;
+            transform: translateY(-3px);
+        }
+
+        #hidden-message {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff0f5;
+            border-radius: 15px;
+            border-left: 5px solid #ff69b4;
+        }
+
+        .ramen-icon {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>Hi, Nieza Baby... 🌸</h1>
+        <p>I’ve been thinking about you all day. My world feels a little less bright when things aren't right between us. I hate that I made you upset, and I want you to know how much I truly care about you.</p>
+        
+        <p><strong>I'm sorry, baby Nieza. Can we make things right? 🥺</strong></p>
+
+        <div class="btn-container">
+            <button onclick="showLove()">I Forgive You ❤️</button>
+            <button onclick="promiseRamen()">Let's Talk & Eat Ramen 🍜</button>
+        </div>
+
+        <div id="hidden-message">
+            <h3 id="message-title"></h3>
+            <p id="message-body"></p>
+            <span class="ramen-icon">🍥🍜🍥</span>
+        </div>
+    </div>
+
+    <script>
+        function showLove() {
+            const div = document.getElementById('hidden-message');
+            const title = document.getElementById('message-title');
+            const body = document.getElementById('message-body');
+            
+            div.style.display = 'block';
+            title.innerText = "Thank you, my Queen! 👑";
+            body.innerText = "You have no idea how much this means to me. I promise to hold you closer, listen better, and love you harder every single day. You are my everything.";
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        function promiseRamen() {
+            const div = document.getElementById('hidden-message');
+            const title = document.getElementById('message-title');
+            const body = document.getElementById('message-body');
+            
+            div.style.display = 'block';
+            title.innerText = "Ramen Date it is! 🍜✨";
+            body.innerText = "I'll take you to your favorite spot, we can get the extra spicy broth (or however you like it!), and I'll just spend the whole time making sure you're smiling again. I love you!";
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+    </script>
+</body>
+</html>
